@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Your Name - software developer and technology enthusiast."
+    />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#eff6ff",
+                100: "#dbeafe",
+                200: "#bfdbfe",
+                300: "#93c5fd",
+                400: "#60a5fa",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a"
+              }
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <div class="min-h-screen flex flex-col">
+      <!-- Header -->
+      <header
+        class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-20"
+      >
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+          <a href="#top" class="flex items-center gap-2 group">
+            <div
+              class="h-9 w-9 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-500/40 group-hover:scale-105 transition-transform"
+            >
+              <span class="text-lg font-semibold">Y</span>
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span class="text-sm font-semibold tracking-wide uppercase text-slate-300">
+                Your Name
+              </span>
+              <span class="text-xs text-slate-500">
+                Software Developer
+              </span>
+            </div>
+          </a>
+          <nav class="hidden sm:flex items-center gap-6 text-sm">
+            <a href="#about" class="text-slate-300 hover:text-primary-400 transition-colors">
+              About
+            </a>
+            <a href="#projects" class="text-slate-300 hover:text-primary-400 transition-colors">
+              Projects
+            </a>
+            <a href="#contact" class="text-slate-300 hover:text-primary-400 transition-colors">
+              Contact
+            </a>
+          </nav>
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-1 rounded-full bg-primary-500 px-4 py-1.5 text-xs font-semibold text-white shadow-lg shadow-primary-500/40 hover:bg-primary-400 transition-colors"
+          >
+            Let’s talk
+          </a>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main id="top" class="flex-1">
+        <!-- Hero -->
+        <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 grid gap-10 lg:grid-cols-[minmax(0,1.6fr),minmax(0,1fr)] items-center">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary-400 mb-4">
+                Portfolio
+              </p>
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+                Hi, I’m <span class="text-primary-400">Your Name</span>.
+              </h1>
+              <p class="text-lg text-slate-300 mb-6 max-w-xl">
+                I’m a software developer who enjoys building clean, user‑friendly web experiences.
+                I focus on modern JavaScript, React, and Node.js.
+              </p>
+              <div class="flex flex-wrap gap-3 mb-6">
+                <a
+                  href="#projects"
+                  class="inline-flex items-center justify-center rounded-full bg-primary-500 px-5 py-2 text-sm font-medium text-white shadow-lg shadow-primary-500/40 hover:bg-primary-400 transition-colors"
+                >
+                  View my work
+                </a>
+                <a
+                  href="#contact"
+                  class="inline-flex items-center justify-center rounded-full border border-slate-700 px-5 py-2 text-sm font-medium text-slate-100 hover:border-primary-400 hover:text-primary-300 transition-colors"
+                >
+                  Contact me
+                </a>
+              </div>
+              <div class="flex flex-wrap items-center gap-3 text-xs text-slate-400">
+                <span class="inline-flex items-center gap-1 rounded-full border border-slate-800 bg-slate-900/60 px-3 py-1">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Available for freelance work
+                </span>
+                <span class="text-slate-600">|</span>
+                <span>JavaScript · TypeScript · React · Node.js</span>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute -inset-0.5 rounded-3xl bg-gradient-to-br from-primary-500/40 via-sky-500/20 to-indigo-500/30 blur-2xl opacity-60"
+                aria-hidden="true"
+              ></div>
+              <div
+                class="relative rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 p-6 shadow-2xl"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <div>
+                    <p class="text-xs font-medium text-slate-400">Current Focus</p>
+                    <p class="text-sm font-semibold text-slate-100">
+                      Building delightful web products
+                    </p>
+                  </div>
+                  <div
+                    class="h-10 w-10 rounded-2xl bg-slate-900 flex items-center justify-center border border-slate-700"
+                  >
+                    <span class="text-lg">💻</span>
+                  </div>
+                </div>
+                <dl class="grid grid-cols-2 gap-4 text-xs">
+                  <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-3">
+                    <dt class="text-slate-500 mb-1">Experience</dt>
+                    <dd class="font-semibold text-slate-100">X+ years</dd>
+                  </div>
+                  <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-3">
+                    <dt class="text-slate-500 mb-1">Location</dt>
+                    <dd class="font-semibold text-slate-100">Your City</dd>
+                  </div>
+                  <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-3 col-span-2">
+                    <dt class="text-slate-500 mb-1">What I enjoy</dt>
+                    <dd class="font-medium text-slate-200">
+                      Turning ideas into polished products, and solving real user problems.
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="border-b border-slate-800 bg-slate-950">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 grid gap-10 md:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)]">
+            <div>
+              <h2 class="text-xl sm:text-2xl font-semibold mb-4">About me</h2>
+              <p class="text-slate-300 mb-3">
+                I’m a developer who cares about clean code, great UX, and building things that
+                people actually enjoy using. I like working end‑to‑end, from the idea and design
+                to deployment.
+              </p>
+              <p class="text-slate-400 mb-4">
+                My main stack includes HTML, CSS, Tailwind, JavaScript/TypeScript, React, and
+                Node.js, but I’m always curious and learning new tools when they make sense.
+              </p>
+              <p class="text-slate-400">
+                Outside of coding, you can find me exploring new technologies, reading about
+                product design, or contributing to small open‑source projects.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-slate-300 uppercase tracking-[0.18em] mb-4">
+                Skills
+              </h3>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+                  HTML &amp; CSS
+                </span>
+                <span class="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+                  Tailwind CSS
+                </span>
+                <span class="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+                  JavaScript / TypeScript
+                </span>
+                <span class="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+                  React
+                </span>
+                <span class="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+                  Node.js
+                </span>
+                <span class="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+                  REST APIs
+                </span>
+                <span class="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">
+                  Git &amp; GitHub
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="border-b border-slate-800 bg-slate-950">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+            <div class="flex items-end justify-between gap-4 mb-8">
+              <div>
+                <h2 class="text-xl sm:text-2xl font-semibold mb-2">Projects</h2>
+                <p class="text-slate-400 text-sm">
+                  A few things I’ve built recently. Replace these with your own projects.
+                </p>
+              </div>
+              <div class="hidden sm:block">
+                <span class="inline-flex items-center rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-400">
+                  Add your GitHub / links here
+                </span>
+              </div>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3">
+              <!-- Project card 1 -->
+              <article
+                class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 flex flex-col hover:border-primary-500/70 hover:bg-slate-900 transition-colors"
+              >
+                <div class="mb-3 flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-slate-100 group-hover:text-primary-300">
+                    Project One
+                  </h3>
+                  <span class="rounded-full bg-slate-800 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-400">
+                    Frontend
+                  </span>
+                </div>
+                <p class="text-xs text-slate-400 mb-3">
+                  A short description of what this project does and why it’s interesting.
+                </p>
+                <div class="mt-auto flex flex-wrap items-center justify-between gap-2 text-[11px]">
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="rounded-full bg-slate-800/80 px-2 py-0.5 text-slate-400">
+                      React
+                    </span>
+                    <span class="rounded-full bg-slate-800/80 px-2 py-0.5 text-slate-400">
+                      Tailwind
+                    </span>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center gap-1 text-primary-300 hover:text-primary-200"
+                  >
+                    <span>View</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project card 2 -->
+              <article
+                class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 flex flex-col hover:border-primary-500/70 hover:bg-slate-900 transition-colors"
+              >
+                <div class="mb-3 flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-slate-100 group-hover:text-primary-300">
+                    Project Two
+                  </h3>
+                  <span class="rounded-full bg-slate-800 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-400">
+                    Full‑stack
+                  </span>
+                </div>
+                <p class="text-xs text-slate-400 mb-3">
+                  Another project description. Mention the problem solved and the tech used.
+                </p>
+                <div class="mt-auto flex flex-wrap items-center justify-between gap-2 text-[11px]">
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="rounded-full bg-slate-800/80 px-2 py-0.5 text-slate-400">
+                      Node.js
+                    </span>
+                    <span class="rounded-full bg-slate-800/80 px-2 py-0.5 text-slate-400">
+                      REST API
+                    </span>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center gap-1 text-primary-300 hover:text-primary-200"
+                  >
+                    <span>View</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project card 3 -->
+              <article
+                class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 flex flex-col hover:border-primary-500/70 hover:bg-slate-900 transition-colors"
+              >
+                <div class="mb-3 flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-slate-100 group-hover:text-primary-300">
+                    Project Three
+                  </h3>
+                  <span class="rounded-full bg-slate-800 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-400">
+                    UI
+                  </span>
+                </div>
+                <p class="text-xs text-slate-400 mb-3">
+                  A small UI or design‑focused project that shows your eye for detail.
+                </p>
+                <div class="mt-auto flex flex-wrap items-center justify-between gap-2 text-[11px]">
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="rounded-full bg-slate-800/80 px-2 py-0.5 text-slate-400">
+                      HTML
+                    </span>
+                    <span class="rounded-full bg-slate-800/80 px-2 py-0.5 text-slate-400">
+                      Tailwind
+                    </span>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center gap-1 text-primary-300 hover:text-primary-200"
+                  >
+                    <span>View</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="bg-slate-950">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 grid gap-10 md:grid-cols-[minmax(0,1.3fr),minmax(0,1fr)]">
+            <div>
+              <h2 class="text-xl sm:text-2xl font-semibold mb-3">Let’s work together</h2>
+              <p class="text-slate-300 mb-4">
+                Interested in collaborating or have a role in mind? Send me an email with a few
+                details about what you’re working on.
+              </p>
+              <p class="text-slate-400 text-sm mb-6">
+                I’m especially excited about web apps, developer tools, and products that make
+                people’s workflows smoother.
+              </p>
+              <a
+                href="mailto:you@example.com"
+                class="inline-flex items-center gap-2 rounded-full bg-primary-500 px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-primary-500/40 hover:bg-primary-400 transition-colors"
+              >
+                Email me
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-slate-300 uppercase tracking-[0.18em] mb-4">
+                Links
+              </h3>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-between w-full rounded-xl border border-slate-800 bg-slate-900/70 px-3 py-2 text-slate-200 hover:border-primary-400 hover:text-primary-200 transition-colors"
+                  >
+                    <span>GitHub</span>
+                    <span class="text-xs text-slate-500">Add your URL</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-between w-full rounded-xl border border-slate-800 bg-slate-900/70 px-3 py-2 text-slate-200 hover:border-primary-400 hover:text-primary-200 transition-colors"
+                  >
+                    <span>LinkedIn</span>
+                    <span class="text-xs text-slate-500">Add your URL</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-between w-full rounded-xl border border-slate-800 bg-slate-900/70 px-3 py-2 text-slate-200 hover:border-primary-400 hover:text-primary-200 transition-colors"
+                  >
+                    <span>Twitter / X</span>
+                    <span class="text-xs text-slate-500">Add your handle</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="border-t border-slate-800 bg-slate-950">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+          <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+          <p>Built with HTML &amp; Tailwind CSS.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Set current year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
